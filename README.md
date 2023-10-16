@@ -13,9 +13,9 @@ the knowledge base.
 In order to get started please follows the steps:
 
 - Open an anaconda promt
-- Navigate to the folder you want:                  ```cd <"path_to_folder">```
-- Clone the repo to your local computer with:       ```git clone <"https_url">```
-- Create a virtual environment:                     ```conda create -n <"envname"> python=3.11```
-- Activate virtual environment:                     ```conda activate <"envname">```
+- Navigate to the folder you want:                  ```cd <path_to_folder>```
+- Clone the repo to your local computer with:       ```git clone <https_url>```
+- Create a virtual environment:                     ```conda create -n <envname> python=3.11```
+- Activate virtual environment:                     ```conda activate <envname>```
 - Install libraries needed:                         ```pip install -r requirements.txt```
 
