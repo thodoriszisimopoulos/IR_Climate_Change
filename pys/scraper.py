@@ -9,7 +9,7 @@ import random
 
 url_list = []
 main_link = "https://news.un.org/"
-file_path = "../files/url_list.txt"
+file_path = "files/url_list.txt"
 max_page = 129
 
 for pg in range(max_page):
