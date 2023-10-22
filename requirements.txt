@@ -5,7 +5,7 @@ idna==3.4
 numpy==1.26.1
 pandas==2.1.1
 pytz==2023.3.post1
-pywin32==305.1
+pywin32==305
 requests==2.31.0
 soupsieve==2.5
 tqdm==4.66.1
