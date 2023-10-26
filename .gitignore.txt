@@ -47,7 +47,6 @@ venv.bak/
 .spyproject
 
 # data
-*.csv
 *.json
 *.xlsx
 
