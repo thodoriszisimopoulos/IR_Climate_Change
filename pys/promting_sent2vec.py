@@ -24,14 +24,14 @@ def cleantxt(text):
     tokens = [wn.lemmatize(wrd) for wrd in tokens]
     return tokens
 
-df = pd.read_csv("../files/preprocessed_articles.csv")
-with open(f'../files/embeddings_sent2vec_23779_20.pkl', 'rb') as f:
+df = pd.read_csv("files/preprocessed_articles.csv")
+with open(f'files/embeddings_sent2vec_23779_20.pkl', 'rb') as f:
     model = pkl.load(f)
 
 embeddings_rows = model.wv.vectors.shape[0]
 embeddings_cols = model.wv.vectors.shape[1]
 
-new_sent = "Give me information about global warming in 2020"
+new_sent = input("Enter your query: ")
 test_doc = cleantxt(new_sent)
 test_doc_vector = model.infer_vector(test_doc)
 text_ind = model.dv.most_similar(positive = [test_doc_vector])[0][0]
