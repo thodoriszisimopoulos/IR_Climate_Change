@@ -6,8 +6,8 @@ import pandas as pd
 from nltk import  pos_tag
 import re
 
-df = pd.read_csv("../files/preprocessed_articles.csv")
-with open('../files/embeddings.pickle.pkl', 'rb') as f:
+df = pd.read_csv("files/preprocessed_articles.csv")
+with open('files/embeddings.pickle.pkl', 'rb') as f:
     embedding_bert = pkl.load(f)
 
 query = input("Enter your query: ")
